@@ -1,0 +1,40 @@
+.sidebar {
+  padding: 15px;
+
+  li {
+    padding: 15px;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  &.small {
+    height: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+
+    &.open {
+      height: auto;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .sidebar {
+    &:last-of-type {
+      border-top: 1px solid #e34444;
+      a {
+        color: #e34444;
+      }
+    }
+  }
+}
+.mobile-sidebar {
+  padding: 15px;
+  border-bottom: 1px solid #fff;
+  span {
+    cursor: pointer;
+  }
+}

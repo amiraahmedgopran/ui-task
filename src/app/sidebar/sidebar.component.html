@@ -1,0 +1,24 @@
+
+  <ul class="bg-dark list-unstyled sidebar d-none d-md-block">
+    <li><a href=""><i class="fa fa-quora"></i> Antiques</a></li>
+    <li><a href=""><i class="fa fa-quora"></i> Antiques</a></li>
+    <li><a href=""><i class="fa fa-quora"></i> Antiques</a></li>
+    <li><a href=""><i class="fa fa-quora"></i> Antiques</a></li>
+    <li><a href=""><i class="fa fa-quora"></i> Antiques</a></li>
+    <li><a href=""><i class="fa fa-quora"></i> Antiques</a></li>
+
+    <li><a href=""><i class="fa fa-quora"></i> All Categories</a></li>
+  </ul>
+
+  <!-- mobile sidebar -->
+  <div class="d-md-none d-block">
+    <div class="mobile-sidebar bg-dark"><a href="" class="text-white"><i class="fa fa-quora"></i> All Categories</a><span class="float-right" (click)="openCategory()"><i class="fa text-white" [ngClass]="{'fa-bars': !catOpen, 'fa-close': catOpen}" ></i></span></div>
+  <ul class="bg-dark list-unstyled sidebar small m-0" [class.open]="catOpen">
+    <li><a href=""><i class="fa fa-quora"></i> Antiques</a></li>
+    <li><a href=""><i class="fa fa-quora"></i> Antiques</a></li>
+    <li><a href=""><i class="fa fa-quora"></i> Antiques</a></li>
+    <li><a href=""><i class="fa fa-quora"></i> Antiques</a></li>
+    <li><a href=""><i class="fa fa-quora"></i> Antiques</a></li>
+    <li><a href=""><i class="fa fa-quora"></i> Antiques</a></li>
+  </ul>
+  </div>

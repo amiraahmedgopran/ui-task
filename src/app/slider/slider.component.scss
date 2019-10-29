@@ -1,0 +1,31 @@
+.product-slider {
+  padding: 20px;
+
+  .owl-item-image {
+    width: 100%;
+    height: 270px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+  }
+  .slide-text {
+    margin-top: 15px;
+  }
+  .product-text {
+    color: #777;
+  }
+  .price {
+    font-weight: bold;
+  }
+  .fixed {
+    display: inline-block;
+    padding: 5px;
+    height: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+  }
+}

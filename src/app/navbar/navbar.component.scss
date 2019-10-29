@@ -1,0 +1,131 @@
+.navbar-expand-lg {
+  .navbar-nav {
+    // @include media-break-point-sm(down) {
+    //   flex-direction: row;
+    // }
+      .nav-link {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-bottom: 0;
+      padding-top: 0;
+      cursor: pointer;
+    }
+  }
+}
+
+.form-inline {
+  position: relative;
+  select {
+    width: 24%;
+    border: 2px solid purple;
+    border-right: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('../../assets/clothes/dropdown.png');
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: 90% center;
+  }
+  .vertical-bar {
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    background-color: #eee;
+    position: absolute;
+    left: 24%;
+  }
+  input.form-control {
+    width: 60%;
+    border-radius: 0;
+    border: 2px solid purple;
+    border-left: 0;
+  }
+  button {
+    width: 16%;
+    border-radius: 0;
+    background-color: purple;
+    border-color: purple;
+    text-transform: uppercase;
+  }
+}
+
+.small-nav {
+  .navbar-nav {
+    flex-direction: row;
+
+    li {
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .middle-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 15px;
+    border-bottom: 1px solid #ccc;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+
+    .view {
+      font-size: 21px;
+      color: #000;
+    }
+  }
+
+  .bottom-navbar {
+    background-image: url('../../assets/clothes/img1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    .bottom-navbar-container {
+      background-color: rgba(255,255,255,0.9);
+      padding: 15px;
+
+      .nav-icon {
+        font-size: 45px;
+        color: #808080a1;
+      }
+    }
+  }
+
+  .form-inline {
+    select {
+      font-size: 10px;
+      padding: 1px;
+    }
+    button {
+      font-size: 0;
+
+      &::after {
+        content: "\f002";
+        font-size: 16px;
+        font-family: 'FontAwesome';
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .navbar-nav {
+    flex-direction: row;
+  }
+  .container {
+    width: 95%;
+    max-width: 95%;
+  }
+  select {
+    font-size: 10px;
+  }
+  .navbar-expand-lg .navbar-nav a.nav-link {
+    font-size: 14px;
+  }
+}

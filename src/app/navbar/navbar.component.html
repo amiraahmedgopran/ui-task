@@ -1,0 +1,182 @@
+<!-- desktop navbar -->
+<nav class="d-none d-md-block">
+  <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link">
+          <i class="fa fa-skype"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          <i class="fa fa-vine"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          <i class="fa fa-facebook"></i>
+        </a>
+      </li>
+
+      <li class="nav-item border-left d-md-block d-none">
+        <a class="nav-link">
+          Home
+        </a>
+      </li>
+      <li class="nav-item dropdown border-left">
+        <a class="nav-link dropdown-toggle" (click)="onSelectItem()" [class.show]="open">
+          <i class="fa fa-heart-o"></i> My Dokkanz
+        </a>
+        <div class="dropdown-menu" [class.show]="open">
+          <a class="dropdown-item">njknmk</a>
+          <a class="dropdown-item">njknmk</a>
+          <a class="dropdown-item">njknmk</a>
+        </div>
+      </li>
+      <li class="nav-item border-left">
+        <a class="nav-link">
+          Help & Contact
+        </a>
+      </li>
+      <li class="nav-item border-left">
+        <a class="nav-link">
+          <i class="fa fa-facebook"></i>
+        </a>
+      </li>
+      <li class="nav-item border-left">
+        <a class="nav-link">
+          LE <span class="d-inline-block ml-3">$</span>
+        </a>
+      </li>
+      <li class="nav-item border-left">
+        <a class="nav-link">
+          Eng <span class="d-inline-block ml-3">Ar</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand m-0" href="#"><img class="logo rounded-circle w-100" src="../../assets/clothes/logo.PNG"></a>
+        <div id="navbarSupportedContent" class="w-100">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-9">
+                <form class="form-inline my-2 w-100 my-lg-0">
+                  <select class="form-control">
+                    <option>Category Search</option>
+                    <option>first cat</option>
+                    <option>second cat</option>
+                    <option>third cat</option>
+                  </select>
+                  <span class="vertical-bar"></span>
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0 " type="submit">Search</button>
+                  </form>
+            </div>
+            <div class="col-md-3">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link pl-0 pt-2 pb-2 pr-2 text-purple">
+                    Hello, Amira
+                  </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-0">
+                      <button class="btn btn-purple rounded-0"><i class="fa fa-shopping-cart"></i> My Cart</button>
+                    </a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- mobile navbar -->
+<nav class="d-md-none small-nav">
+    <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link">
+                  <i class="fa fa-skype"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">
+                  <i class="fa fa-vine"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+          <li class="nav-item border-left">
+            <a class="nav-link">
+              Help & Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="middle-header" [class.d-none]="close">
+        <span class="close-icon" (click)="closeDiv()"><i class="fa fa-close"></i></span>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-3">
+                <a class="navbar-brand m-0" href="#"><img class="logo rounded-circle w-100" src="../../assets/clothes/logo.PNG"></a>
+              </div>
+                <div class="col-7 p-0 pt-3"><h6>FASTER, EASIER DOKANZZE</h6>
+                <p class="text-secondary">IT's All in app</p></div>
+                <div class="col-2 text-right pt-3"><a href="" class="view">View</a></div>
+            </div>
+          </div>
+      </div>
+
+      <div class="bottom-navbar">
+        <div class="bottom-navbar-container">
+          <div class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col-6">
+                  <a class="navbar-brand" href="#"><img class="logo w-100" src="../../assets/clothes/logo.PNG"></a>
+              </div>
+              <div class="col-6 text-right">
+                <a href="#" class="nav-icon mr-5 d-inline-block"><i class="fa fa-user"></i></a>
+                <a href="#" class="nav-icon"><i class="fa fa-shopping-cart"></i></a>
+              </div>
+            </div>
+          </div>
+            <div class="search p-3">
+                <form class="form-inline my-2 w-100 my-lg-0">
+                  <select class="form-control">
+                    <option>Category Search</option>
+                    <option>first cat</option>
+                    <option>second cat</option>
+                    <option>third cat</option>
+                  </select>
+                  <span class="vertical-bar"></span>
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+              </div>
+
+              <h2 class="text-center text-purple">CREATIVE AND UNIQUE</h2>
+              <p class="text-center text-purple">Note that since browsers do not currently</p>
+              <button class="btn-black d-block m-auto">GET A LOOK</button>
+        </div>
+      </div>
+</nav>

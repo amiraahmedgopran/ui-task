@@ -1,0 +1,16 @@
+<div class="product-slider">
+  <h2 class="mb-5">New Products</h2>
+<owl-carousel [options]="carouselOptions" [items]="images" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+  <div class="item" *ngFor="let image of images;let i= index" [ngStyle]="{ 'width' : image.width }">
+    <div class="owl-item-image" [ngStyle]="{ 'background-image' : 'url(' + image.image + ')' }">
+    <div [ngClass]="image.fixed == 'FIXED PRICE' ? 'bg-orange' : 'bg-red'" class="fixed">{{ image.fixed }}</div>
+    </div>
+    <!-- <img class="slide-image" src="{{image.image}}" > -->
+    <div class="slide-text">
+      <h6 class="product-text">{{ image.text }}</h6>
+      <span class="price">{{ image.price }}</span>
+      <a class="btn-buy">BUY NOW</a>
+    </div>
+  </div>
+</owl-carousel>
+</div>
